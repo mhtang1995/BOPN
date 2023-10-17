@@ -1,0 +1,38 @@
+{
+  "dataset": "msra",
+  "exe": "both_5",
+  "offset_mode": "both",
+
+  "device": 3,
+  "save_path": "model.pt",
+  "predict_path": "output.json",
+  "use_checkpoint": false,
+
+  "dist_emb_size": 20,
+  "lstm_hid_size": 256,
+  "biaffine_hid_size": 150,
+  "window_size": 2,
+
+  "emb_dropout": 0.5,
+  "out_dropout": 0.33,
+  "loss_epsilon": 0.01,
+
+  "epochs": 40,
+  "batch_size": 2,
+
+  "learning_rate": 1e-3,
+  "weight_decay": 0,
+  "clip_grad_norm": 5.0,
+
+  "bert_name": "./berts/chinese-roberta-wwm-ext-large",
+  "bert_hid_size": 1024,
+  "bert_learning_rate": 5e-6,
+  "warm_factor": 0.1,
+
+  "concat_data": true,
+  "use_grid": true,
+  "parse_offset": false,
+  "use_conv": false,
+  "seed": 123
+
+}

@@ -1,0 +1,38 @@
+{
+  "dataset": "genia",
+  "exe": "2-0.125",
+  "offset_mode": "both",
+
+  "device": 1,
+  "save_path": "model.pt",
+  "predict_path": "output.json",
+  "use_checkpoint": true,
+
+  "dist_emb_size": 20,
+  "lstm_hid_size": 256,
+  "biaffine_hid_size": 150,
+  "window_size": 2,
+
+  "emb_dropout": 0.5,
+  "out_dropout": 0.33,
+  "loss_epsilon": 0.01,
+
+  "epochs": 50,
+  "batch_size": 8,
+
+  "learning_rate": 1e-3,
+  "weight_decay": 0,
+  "clip_grad_norm": 5.0,
+
+
+  "bert_name": "./berts/biobert_v1.1",
+  "bert_hid_size": 768,
+  "bert_learning_rate": 5e-6,
+  "warm_factor": 0.1,
+
+  "concat_data": true,
+  "use_grid": true,
+  "parse_offset": true,
+  "use_conv": true,
+  "seed": 123
+}
